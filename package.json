@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather application to allow users to receive weather data for requested city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "npm i && node index.js"
+  },
+  "author": "Leighvi Keenan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-minify": "^1.0.0",
+    "fs-extra": "^5.0.0",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
+  }
+}

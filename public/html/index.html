@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+  <title>Weather App</title>
+  <meta name="description" content="Weather App">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Weather App</h1>
+  </header>
+  <main>
+    <div class="group">
+      <form>
+        <h4>Enter city name to get weather results</h4>
+        <input id="city" name="city" type="text" placeholder="Please enter city name..." onkeydown="preventEnter(event)">
+        <button type="button" onclick="getWeatherData()">Submit</button>
+        <div id="inputError" class="error"></div>
+      </form>
+    </div>
+    <div class="group">
+      <h4>Weather results</h4>
+      <div class="results" id="results"></div>
+      <button type="button" id="download-results" onclick="downloadDataFile()" hidden>Download weather results</button>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
