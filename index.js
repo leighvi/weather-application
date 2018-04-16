@@ -14,6 +14,8 @@ const logPath = 'logs/log.txt'
 // Load key for openWeatherMap API
 const openWeatherApiKey = fsx.readFileSync('api/key.txt')
 
+// Ensure file to contain server logs exists
+fsx.ensureFileSync(logPath)
 // Create a write stream for server logs
 const logStream = fsx.createWriteStream(logPath, {flags: 'a'})
 
